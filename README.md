@@ -113,6 +113,64 @@ python3 rosie_agent.py tools     # list Cotlet.dev tools
 python3 rosie_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in Rosie
+
+These are real jobs Rosie users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in Rosie account.
+
+### Calls and callbacks
+
+#### Can ChatGPT or Claude sort last night's calls in Rosie for me?
+
+Yes. Rosie takes the calls and shows a summary, transcript and message for each. With Cotlet, ChatGPT or Claude reads them in your signed-in Rosie dashboard and lists the calls since 6pm with the caller, the reason and who needs a callback first.
+
+Ask your agent: "List the Rosie calls since 6pm yesterday with the caller, the reason and who needs a callback first. Change nothing."
+
+As an API endpoint: Yes. Save the check as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to send the callback list to your phone.
+
+#### Can ChatGPT or Claude find the callers Rosie quoted who never booked and follow up?
+
+Yes. With Cotlet, your agent reads this week's calls in your Rosie dashboard, lists callers who asked for a quote and did not book, and drafts a short text for each. Cotlet does not send texts itself. Nothing is sent until you say yes.
+
+Ask your agent: "Which Rosie callers asked for a quote this week and never booked? Draft a short text to each that I can send."
+
+As an API endpoint: Yes. Save the missed-quote list as an endpoint in Cotlet and call it every Friday from n8n, Make or Zapier to send the texts through your own phone line.
+
+### Calls into your CRM
+
+#### How do I get Rosie calls into my CRM as new leads?
+
+Partly. Rosie's Zapier app sends new calls and bookings to other apps as they happen. For past calls, summaries and callbacks, Cotlet lets your agent read them in your Rosie dashboard and add each caller with a job request to your CRM. Nothing is added until you say yes.
+
+Ask your agent: "Add yesterday's Rosie calls that asked for a job to my CRM as new leads with name, phone and the reason for the call."
+
+As an API endpoint: Yes. Save the call read as an endpoint in Cotlet and call it daily from n8n or Make to push each new lead into your CRM.
+
+### Answers and hours
+
+#### Can AI teach Rosie the answers she missed and fix wrong answers?
+
+Yes. With Cotlet, your agent reads the calls in your signed-in Rosie dashboard, finds questions Rosie could not answer or got wrong and drafts the missing answers from your notes. It adds them to Rosie's agent settings only after you say yes. Nothing changes until you say yes.
+
+Ask your agent: "Find Rosie calls where she could not answer a question and draft the missing answers for her settings. Change nothing yet."
+
+As an API endpoint: Yes. Save the unanswered-questions list as an endpoint in Cotlet and call it every week from n8n, Make or Zapier to get the new gaps by email.
+
+#### Can ChatGPT or Claude change Rosie's holiday hours and greeting?
+
+Yes. With Cotlet, your agent opens the Agent settings in your signed-in Rosie dashboard and changes the hours and the greeting for the holidays. Rosie keeps answering as before until you say yes. Nothing changes until you say yes.
+
+Ask your agent: "Change Rosie's hours and greeting for Thanksgiving: closed that day, take messages. Show me the new wording first."
+
+### Monthly reports
+
+#### Can ChatGPT or Claude make a monthly call report from Rosie?
+
+Yes. Rosie has no export of calls or bookings. With Cotlet, your agent reads the month in your signed-in Rosie dashboard and counts the calls, bookings, messages and spam calls Rosie handled, so you get one short report.
+
+Ask your agent: "How many calls, bookings, messages and spam calls did Rosie handle this month? Give me one short report."
+
+As an API endpoint: Yes. Save the count as an endpoint in Cotlet and call it on the first of each month from n8n, Make or a script to fill a Google Sheet.
+
 ## Questions from Rosie users
 
 **Does Rosie have an API?**
